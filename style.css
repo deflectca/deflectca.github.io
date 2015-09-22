@@ -28,15 +28,26 @@ a:hover {
     color: #4c4a4a;
 }
 
+div#tasklist {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
 div.projectDescription {
-    color: #eeedea;
-    width: 100%;
-    padding: 20px;
+    background-color: #eeedea;
+    width: 80%;
+    padding-left: 20px;
+    padding-top: 2px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
     margin-left: 20px;
+    border-radius: 4px;
 }
 
 h2.title {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
 }
 
