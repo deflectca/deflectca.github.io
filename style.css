@@ -28,6 +28,13 @@ a:hover {
     color: #4c4a4a;
 }
 
+div#aboutDeflect {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
 div#tasklist {
     margin-left: auto;
     margin-right: auto;
@@ -53,4 +60,14 @@ h2.title {
 
 p.description {
 
+}
+
+img#deflectLogo {
+    float: left;
+    width: 10%;
+}
+
+p#deflectDescription {
+    float: right;
+    width: 89%;
 }
