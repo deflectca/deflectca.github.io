@@ -1,0 +1,45 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin-left: -8px;
+}
+
+body {
+    background-color: #f4f4f3;
+    font-family: "Lato";
+    color: #4c4a4a;
+    font-size: 16px;
+}
+
+p {
+
+}
+
+a {
+    text-decoration: none;
+    color: #e43624;
+}
+
+a:visited {
+    color: #e43624;
+}
+
+a:hover {
+    color: #4c4a4a;
+}
+
+div.projectDescription {
+    color: #eeedea;
+    width: 100%;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+h2.title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+p.description {
+
+}
