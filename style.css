@@ -1,7 +1,6 @@
 html {
     height: 100%;
     width: 100%;
-    margin-left: -8px;
 }
 
 body {
@@ -11,8 +10,12 @@ body {
     font-size: 16px;
 }
 
-p {
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato" !important;
+}
 
+p {
+    font-family: "Lato" !important;
 }
 
 a {
@@ -33,25 +36,17 @@ div#heading {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-}
-
-div#heading h1 {
-    color: #e43624;
+    margin-top: 20px;
 }
 
 div#heading img {
-    margin-left: 50px;
 }
 
 div#heading p {
     width: 80%;
-    margin-left: 50px;
 }
 
 div#aboutDeflect {
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
     width: 80%;
     display: block;
 }
@@ -76,7 +71,8 @@ div.projectDescription {
 
 div.hr {
     background-color: #e43624;
-    width: calc(100% + 16px);
+    width: 100%;
+    /*width: calc(100% + 16px);*/
     height: 6px;
     margin-bottom: 30px;
 }
@@ -91,17 +87,16 @@ p.description {
 }
 
 img#deflectLogo {
-    width: 300px;
-    height: 250px;
+    width: 160px;
+    height: 110px;
     background-color: #E72D34;
     padding: 30px;
     border-radius: 8px;
 }
 
 img#equalitieLogo {
-    width: 300px;
-    height: 250px;
-    padding: 30px;
+    width: 160px;
+    height: 110px;
     border-radius: 8px;
 }
 
