@@ -50,11 +50,14 @@
             margin-top: 20px;
         }
 
-        div#heading-logo img#deflectLogo {
-            margin-top: 32px;
-            padding: 24px;
-            border-radius: 8px;
-            width: 180px;
+        #deflectLogo {
+            width: 120px;
+        }
+
+        .flex-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         div#footer {
@@ -66,12 +69,6 @@
             height: 30px;
             min-height: 30px;
             clear: both;
-        }
-
-        #footer-logo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
 
         #footer-logo a {
@@ -94,20 +91,39 @@
         div#subprojects .project > h3 {
             margin: 18px 0;
         }
+
+        .infographic {
+            margin: 25px 0;
+        }
+
+        .infographic div {
+            width: 600px;
+            height: 250px;
+            background-image: url('Deflect_Infographic_v1.png');
+            background-repeat: no-repeat;
+            background-size: 95%;
+            background-position: center center;
+        }
     </style>
 </head>
 <body>
 <div class="row">
     <div id="heading" class="col-sm-10 col-sm-offset-1">
-        <div class="col-xs-8 col-md-9">
-            <h2>About Deflect</h2>
-            <a href="http://deflect.ca">Deflect</a> is a distributed infrastructure built to mitigate DDoS attacks and
-            keep your website accessible at all times. Built on principles and FOSS. 
+        <div class="row equal">
+            <div class="col-xs-8 col-md-9">
+                <h2>About Deflect</h2>
+                <a href="http://deflect.ca">Deflect</a> is a distributed infrastructure built to mitigate DDoS attacks and
+                keep your website accessible at all times. Built on principles and FOSS. 
+            </div>
+            <div id="heading-logo" class="col-xs-2 col-md-3 flex-center">
+                <a href="https://deflect.ca"><img id="deflectLogo" src="deflect.ca.png"/></a>
+            </div>
         </div>
-        <div id="heading-logo" class="col-xs-2">
-            <a href="https://deflect.ca"><img id="deflectLogo" src="deflect.ca.png"/></a>
-        </div>
-        <!--img src="Deflect_Infographic_v1.png" width="600" height="250" align="middle"-->
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-10 col-md-12 col-sm-10 col-sm-offset-1 flex-center infographic">
+        <div id="infographic-div"></div>
     </div>
 </div>
 <hr/>
@@ -169,7 +185,7 @@
                 online security, and information management. Our goal is to create accessible technology and improve the
                 skill-set for defending human rights and freedoms in the digital age.
             </div>
-            <div id="footer-logo" class="col-xs-2">
+            <div id="footer-logo" class="col-xs-2 flex-center">
                 <a href="https://equalit.ie"><img id="equalitieLogo" src="eQualitie_Logo_RGB_small.png"/></a>
             </div>
         </div>
