@@ -1,195 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Deflect</title>
-    <link href="bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css"/>
-    <style>
-        body {
-            font-family: Lato, sans-serif !important;
-            font-size: 1.66em;
-        }
-
-        h1 {
-            font-size: 2.5em;
-        }
-
-        hr {
-            border-width: 6px 0 0;
-            border-color: #E43624;
-            border-style: solid none none;
-            margin: 30px 0 10px;
-        }
-
-        a {
-            color: #E43624;
-        }
-
-        a:visited {
-            color: #e43624;
-        }
-
-        a:hover {
-            color: #4c4a4a;
-        }
-
-        a, a:visited, a:hover {
-            text-decoration: none;
-        }
-
-        p {
-            font-size: 0.9em;
-        }
-
-        div.row {
-            margin: 0 !important;
-        }
-
-        div#heading {
-            margin-top: 20px;
-        }
-
-        #deflectLogo {
-            width: 120px;
-        }
-
-        .flex-center {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        div#footer {
-            margin-top: 10px;
-            margin-bottom: 30px;
-        }
-
-        div#footer > .push {
-            height: 30px;
-            min-height: 30px;
-            clear: both;
-        }
-
-        #footer-logo a {
-            width: 100%;
-        }
-
-        .row.equal {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        div#subprojects .project {
-            background-color: #EEEDEA;
-            padding: 2px 20px 10px;
-            margin-top: 10px;
-            margin-left: 20px;
-            border-radius: 4px;
-        }
-
-        div#subprojects .project > h3 {
-            margin: 18px 0;
-        }
-
-        .infographic {
-            margin: 25px 0;
-        }
-
-        .infographic div {
-            width: 600px;
-            height: 250px;
-            background-image: url('Deflect_Infographic_v1.png');
-            background-repeat: no-repeat;
-            background-size: 95%;
-            background-position: center center;
-        }
-    </style>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-<div class="row">
-    <div id="heading" class="col-sm-10 col-sm-offset-1">
-        <div class="row equal">
-            <div class="col-xs-8 col-md-9">
-                <h2>About Deflect</h2>
-                <a href="http://deflect.ca">Deflect</a> is a distributed infrastructure built to mitigate DDoS attacks and
-                keep your website accessible at all times. Built on principles and FOSS. 
-            </div>
-            <div id="heading-logo" class="col-xs-2 col-md-3 flex-center">
-                <a href="https://deflect.ca"><img id="deflectLogo" src="deflect.ca.png"/></a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-xs-10 col-md-12 col-sm-10 col-sm-offset-1 flex-center infographic">
-        <div id="infographic-div"></div>
-    </div>
-</div>
-<hr/>
-<div class="row">
-    <div class="col-sm-10 col-sm-offset-1">
-        <h2>Deflect Components</h2>
-        <div id="subprojects" class="col-sm-11">
-            <div class="project">
-                <h3><a href="https://github.com/equalitie/deflect">Deflect</a></h3>
-                <p>Ansible playbooks to setup your own Deflect DDoS mitigation infrastructure, built on Debian 9 </p>
-            </div>
-            <div class="project">
-                <h3><a href="https://github.com/equalitie/autodeflect">Auto Deflect</a></h3>
-                <p>Ansible playbooks for Deflect configuration management </p>
-            </div>
-            <div class="project">
-                <h3><a href="https://github.com/equalitie/swabber">Swabber</a></h3>
-
-                <p>Simple pubsub-based IP banning engine. Subscribes to a ban publisher, bans the IPs and then unbans
-                    them after a configured time period. Designed to work in concert with <a
-                            href="https://github.com/equalitie/banjax">Banjax</a>.</p>
+    <div class="row">
+        <div id="heading" class="col-sm-10 col-sm-offset-1">
+            <div class="row equal">
+                <div class="col-xs-7 col-md-9">
+                    <h2>About Deflect</h2>
+                    <a href="http://deflect.ca">Deflect</a> is a distributed infrastructure built to mitigate DDoS attacks and keep your website accessible at all times. Its built on
+                    <a href="https://docs.deflect.ca/en/latest/principles.html">principles</a> and free software. Our tooling has serviced thousands of websites and millions of their readers, since 2011. Learn more on the <a href="https://docs.deflect.ca/en/latest/index.html">Documentation portal</a>                    or by looking up individiual Github repositories below.
                 </div>
-            <div class="project">
-                <h3><a href="https://github.com/equalitie/banjax">Banjax</a></h3>
-
-                <p>Apache Traffic Server Plugin performing various anti-DDoS measures, including pattern-based banning,
-                    JavaScript browser challenge-responses, captchas and authenticated access to uncached sections of
-                    websites.</p>
-            </div>
-            <div class="project">
-                <h3><a href="https://github.com/equalitie/edgemanage">Edgemanage</a></h3>
-
-                <p>Edgemanage is a tool for managing the HTTP availability of a cluster of web servers via DNS. The
-                    machines tested are expected to be at risk of large volumes of traffic, attack or other potential
-                    instability. If a machine is found to be underperforming, it is replace by a more performant host to
-                    ensure maximum availability.</p>
-            </div>
-            <div class="project">
-                <h3><a href="https://github.com/equalitie/eqpress">eQPress</a></h3>
-
-                <p>Ansible recipes for provisioning and maintaining a managed Wordpress hosting framework.</p>
-            </div>
-            <div class="project">
-                <h3><a href="https://github.com/equalitie/eqbackup">eqbackup</a></h3>
-
-                <p>Not strictly related to the Deflect system but part of the broader infrastructure - a system for
-                    automating the deployment of differential, encrypted, off-site backups.</p>
+                <div id="heading-logo" class="col-xs-2 col-md-3 flex-center">
+                    <a href="https://deflect.ca"><img id="deflectLogo" src="img/deflect.ca.png" /></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<hr/>
-<div class="row">
-    <div id="footer" class="col-sm-10 col-sm-offset-1">
-        <div class="row equal">
-            <div class="col-xs-8 col-md-9">
-                <h2>About eQualitie</h2>
-                <a href="https://equalit.ie">eQualitie</a> develops open and reusable systems with a focus on privacy,
-                online security, and information management. Our goal is to create accessible technology and improve the
-                skill-set for defending human rights and freedoms in the digital age.
-            </div>
-            <div id="footer-logo" class="col-xs-2 flex-center">
-                <a href="https://equalit.ie"><img id="equalitieLogo" src="eQualitie_Logo_RGB_small.png"/></a>
+    <div class="row">
+        <div class="col-xs-10 col-md-12 col-sm-10 col-sm-offset-1 flex-center infographic">
+            <div id="infographic-div"></div>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+            <h2>Deflect Components</h2>
+            <div class="subprojects" class="col-sm-11">
+                <div class="project">
+                    <h3><a href="https://github.com/equalitie/deflect">Deflect</a></h3>
+                    <p>Ansible playbooks to setup your own Deflect DDoS mitigation infrastructure, built on Debian 9. Works in conjunction with <a href="https://github.com/equalitie/autodeflect">Auto
+                                    Deflect</a> for configuration management.</p>
+                </div>
+                <div class="project">
+                    <h3><a href="https://github.com/equalitie/banjax">Banjax</a></h3>
+                    <p>Apache Traffic Server Plugin performing various anti-DDoS measures, including pattern-based banning, JavaScript browser challenge-responses, captchas and authenticated access to uncached sections of websites. Works in concert with
+                        <a href="https://github.com/equalitie/swabber">Swabber</a> - a simple pubsub-based IP banning engine. Subscribes to a ban publisher, bans the IPs and then unbans them after a configured time period.
+                    </p>
+                </div>
+                <div class="project">
+                    <h3><a href="https://github.com/equalitie/edgemanage">Edgemanage</a></h3>
+                    <p>Edgemanage is a tool for managing the HTTP availability of a cluster of web servers via DNS. The machines tested are expected to be at risk of large volumes of traffic, attack or other potential instability. If a machine is found to
+                        be underperforming, it is replace by a more performant host to ensure maximum availability.</p>
+                </div>
+                <div class="project">
+                    <h3><a href="https://github.com/equalitie/eqpress">eQPress</a></h3>
+                    <p>Ansible recipes for provisioning and maintaining a managed Wordpress hosting framework.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-</div>
+    <hr/>
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+            <h2>About Deflect Labs</h2>
+            <a href="https://docs.deflect.ca/en/latest/deflect_labs.html">Deflect Labs</a> is an ongoing and multi-facteted initiative to identify and mitigate malicious network behaivour using artificial intelligence. In production on the Deflect network,
+            the technology and lessons learned are forming the basis of a privacy preserving threat information clearinghouse in the near future.
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-10 col-md-12 col-sm-10 col-sm-offset-1 flex-center infographic-dl">
+            <div id="infographic-dl-div"></div>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+            <h2>Deflect Labs Components</h2>
+            <div class="subprojects" class="col-sm-11">
+                <div class="project">
+                    <h3><a href="https://github.com/equalitie/baskerville">Baskerville</a></h3>
+                    <p>Baskerville is an application layer (7) DDoS mitigation tool, running an analytics engine that leverages machine Learning to distinguish between normal and abnormal web traffic behavior. </p>
+                </div>
+                <div class="project">
+                    <h3><a href="hhttps://github.com/equalitie/deflect-analytics-ecosystem">DAE</a></h3>
+                    <p>Docker files to run all Baskerville components, including the analytics engine, Apache Kafka, distributed storage with a Spark cluster, Prometheus and Grafana.</p>
+                </div>
+                <div class="project">
+                    <h3><a href="https://github.com/equalitie/esretriever">ESretriever</a></h3>
+                    <p>A small library that uses PySpark to get data from Elastic Search.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div id="footer" class="col-sm-10 col-sm-offset-1">
+            <div class="row equal">
+                <div class="col-xs-8 col-md-9">
+                    <h2>About eQualitie</h2>
+                    <a href="https://equalit.ie">eQualitie</a> develops open and reusable systems with a focus on privacy, online security, and information management. Our goal is to create accessible technology and improve the skill-set for defending
+                    human rights and freedoms in the digital age.
+                </div>
+                <div id="footer-logo" class="col-xs-2 flex-center">
+                    <a href="https://equalit.ie"><img id="equalitieLogo" src="img/eQualitie_Logo_RGB_small.png" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
