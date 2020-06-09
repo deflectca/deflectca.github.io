@@ -11,7 +11,7 @@ hr {
     border-width: 6px 0 0;
     border-color: #E43624;
     border-style: solid none none;
-    margin: 30px 0 10px;
+    margin: 40px 0 20px 0;
 }
 
 a {
@@ -74,7 +74,7 @@ div#footer>.push {
     flex-wrap: wrap;
 }
 
-div#subprojects .project {
+div.subprojects .project {
     background-color: #EEEDEA;
     padding: 2px 20px 10px;
     margin-top: 10px;
@@ -87,7 +87,7 @@ div#subprojects .project>h3 {
 }
 
 .infographic {
-    margin: 25px 0;
+    margin: 40px 0 25px 0;
 }
 
 .infographic div {
@@ -100,7 +100,7 @@ div#subprojects .project>h3 {
 }
 
 .infographic-dl {
-    margin: 25px 0;
+    margin: 40px 0 25px 0;
 }
 
 .infographic-dl div {
