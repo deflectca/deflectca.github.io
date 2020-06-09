@@ -111,3 +111,7 @@ div#subprojects .project>h3 {
     background-size: 95%;
     background-position: center center;
 }
+
+#heading-logo {
+    margin-top: 20px;
+}
