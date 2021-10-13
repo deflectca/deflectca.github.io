@@ -30,18 +30,16 @@
             <h2>Deflect Components</h2>
             <div class="subprojects" class="col-sm-11">
                 <div class="project">
-                    <h3><a href="https://github.com/equalitie/deflect">Deflect</a></h3>
-                    <p>Ansible playbooks to setup your own Deflect DDoS mitigation infrastructure, built on Debian 9. Works in conjunction with <a href="https://github.com/equalitie/autodeflect">Auto
-                                    Deflect</a> for configuration management.</p>
+                    <h3><a href="https://github.com/deflect-ca/deflect">Deflect</a></h3>
+                    <p>This repository allows any individual or organization to setup their own DDoS mitigation service. It contains all necessary components to setup your network controller and edge servers - essentially acting as a reverse proxy to your (clients') origin web servers.</p>
                 </div>
                 <div class="project">
-                    <h3><a href="https://github.com/equalitie/banjax">Banjax</a></h3>
-                    <p>Apache Traffic Server Plugin performing various anti-DDoS measures, including pattern-based banning, JavaScript browser challenge-responses, captchas and authenticated access to uncached sections of websites. Works in concert with
-                        <a href="https://github.com/equalitie/swabber">Swabber</a> - a simple pubsub-based IP banning engine. Subscribes to a ban publisher, bans the IPs and then unbans them after a configured time period.
+                    <h3><a href="https://github.com/deflect-ca/banjax">Banjax</a></h3>
+                    <p>Written in Go, Banjax handles IP challenges and bannings within the Deflect network. It can be used standalone within your own network, or together with the main <a href="https://github.com/deflect-ca/deflect">Deflect</a> service for complete layer-7 DDoS mitigation.
                     </p>
                 </div>
                 <div class="project">
-                    <h3><a href="https://github.com/equalitie/edgemanage">Edgemanage</a></h3>
+                    <h3><a href="https://github.com/deflect-ca/edgemanage">Edgemanage</a></h3>
                     <p>Edgemanage is a tool for managing the HTTP availability of a cluster of web servers via DNS. The machines tested are expected to be at risk of large volumes of traffic, attack or other potential instability. If a machine is found to
                         be underperforming, it is replace by a more performant host to ensure maximum availability.</p>
                 </div>
@@ -71,22 +69,17 @@
             <h2>Deflect Labs Components</h2>
             <div class="subprojects" class="col-sm-11">
                 <div class="project">
-                    <h3><a href="https://github.com/equalitie/baskerville">Baskerville</a></h3>
+                    <h3><a href="https://github.com/deflect-ca/baskerville">Baskerville</a></h3>
                     <p>Baskerville is an application layer (7) DDoS mitigation tool, running an analytics engine that leverages machine Learning to distinguish between normal and abnormal web traffic behavior. </p>
                 </div>
                 <div class="project">
-                    <h3><a href="https://github.com/equalitie/baskerville_dashboard">Baskerville Dashboard</a></h3>
+                    <h3><a href="https://github.com/deflect-ca/baskerville_dashboard">Baskerville Dashboard</a></h3>
                     <p>The Baskerville dashboard allows Baskerville users to submit feedback on previously detected attacks, to help Baskerville learn whether its predictions are accurate or not. This feedback in turn allows the model to mature, and produce better predictions in the future.</p>
                 </div>
                 <div class="project">
-                    <h3><a href="https://github.com/equalitie/deflect-analytics-ecosystem">DAE</a></h3>
-                    <p>Docker files to run all Baskerville components, including the analytics engine, Apache Kafka, distributed storage with a Spark cluster, Prometheus and Grafana.</p>
+                    <h3><a href="https://github.com/deflect-ca/baskerville_client">Client Module</a></h3>
+                    <p>Baskeville client is a client module which processes web server logs and calculates statistical features, send features to a clearing house instance of Baskerville, receives predictions from clearing house for every IP, issues challenge commands for every malicious IP in a separate Kafka topic, and monitors attacks in Grafana dashboards.</p>
                 </div>
-                <div class="project">
-                    <h3><a href="https://github.com/equalitie/esretriever">ESretriever</a></h3>
-                    <p>A small library that uses PySpark to get data from Elastic Search.</p>
-                </div>
-            </div>
         </div>
     </div>
     <hr/>
